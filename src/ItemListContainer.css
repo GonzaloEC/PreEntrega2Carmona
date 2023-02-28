@@ -1,0 +1,15 @@
+
+.product-container{
+    height: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+
+    .product-container {
+        justify-content: center;
+    }
+}

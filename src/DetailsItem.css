@@ -1,0 +1,165 @@
+.detailsItem {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 88vh;
+}
+
+/* containerLeft */
+.detailsItem .containerLeft {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.detailsItem .containerLeft .img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.detailsItem .containerLeft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* containerRigth */
+.detailsItem .containerRight {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.detailsItem .containerRight .descriptionCard {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*description*/ 
+.detailsItem .containerRight .descriptionCard #description {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+ 
+.detailsItem .containerRight .descriptionCard .title {
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+
+.detailsItem .containerRight .descriptionCard .description .description-Title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.detailsItem .containerRight .descriptionCard .description .description-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* precio */
+.detailsItem .containerRight .descriptionCard .price{
+    color: #d66726;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+
+/*buttons*/ 
+.detailsItem .containerRight .buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+
+#details:hover{
+    background-color: #d66726;
+}
+
+
+
+
+@media screen and (max-width: 1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+
+    .detailsItem {
+        padding: 2rem 1rem;
+    }
+
+    .detailsItem .containerLeft {
+        width: 45%;
+    }
+
+    .detailsItem .containerRight {
+        width: 40%;
+    }
+
+    .detailsItem .containerRight .descriptionCard .title {
+        font-size: 1.7rem;
+    }
+
+    .detailsItem .containerRight .descriptionCard .description .description-Title {
+        font-size: 1rem;
+    }
+
+    .detailsItem .containerRight .descriptionCard .description .description-Text {
+        font-size: .8rem;
+    }
+
+    .detailsItem .containerRight .descriptionCard .price {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width:  801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .detailsItem .containerLeft img {
+        height: 80%; 
+    }
+}
+
+@media screen and (max-width: 600px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .detailsItem {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .detailsItem .containerLeft {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .detailsItem .containerRight {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
